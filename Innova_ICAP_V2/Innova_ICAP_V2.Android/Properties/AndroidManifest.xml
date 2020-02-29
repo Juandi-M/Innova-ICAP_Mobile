@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="ac.cr.ICAP.Innova_ICAP_V2" android:installLocation="preferExternal">
+  <uses-sdk android:minSdkVersion="22" android:targetSdkVersion="28" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <application android:label="ICAP Innova" android:icon="@mipmap/ic_launcher" android:usesCleartextTraffic="true"></application>
+  <!--API KEY MAPS-->
+  <meta-data android:name="ac.cr.ICAP.Innova_ICAP_V2" android:value="AIzaSyCWdeH663rAiuSrmb80BZdptheOg2i_JNI" />
+</manifest>

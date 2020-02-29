@@ -1,0 +1,21 @@
+﻿COLORES ICAP OFICIAL
+-----------------------
+
+AZUL OSCURO:
+
+PANTONE 289 C
+Color values:
+RGB= 12 35 64
+HEX/HTML= #0C2340
+CMYK= 100 76 12 70
+
+----------------------------
+
+CELESTE ICAP
+
+PANTONE 3005 C
+Color values:
+RGB: 0 119 200
+HEX/HTML: #0081c6
+CMYK 100 31 0 0
+020222

@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<pages:PopupPage
+    x:Class="Innova_ICAP_V2.Views.AboutUs.MapPopUp"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
+    xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup">
+
+    <!--  You can set an animation in the xaml file or in the csharp code behind  -->
+    <pages:PopupPage.Animation>
+        <animations:ScaleAnimation
+            DurationIn="400"
+            DurationOut="300"
+            EasingIn="SinOut"
+            EasingOut="SinIn"
+            HasBackgroundAnimation="True"
+            PositionIn="Center"
+            PositionOut="Center"
+            ScaleIn="1.2"
+            ScaleOut="0.8" />
+    </pages:PopupPage.Animation>
+
+    <!--  You can use any elements here which are extended from Xamarin.Forms.View  -->
+    <StackLayout
+        Margin="20"
+        Padding="25"
+        BackgroundColor="White"
+        HorizontalOptions="Center"
+        VerticalOptions="Center">
+
+        <StackLayout>
+            <Label
+                FontSize="25"
+                HorizontalOptions="Center"
+                Text="Seleccionar"
+                TextColor="#0C2340"
+                VerticalOptions="Center" />
+
+        </StackLayout>
+
+        <!--  Sede Central  -->
+        <StackLayout>
+            <Label
+                FontSize="Medium"
+                HorizontalOptions="Center"
+                Text="KKKKKKKKKKKKKKKKK"
+                TextColor="Transparent"
+                VerticalOptions="Center" />
+        </StackLayout>
+
+        <StackLayout>
+            <Label
+                FontSize="20"
+                HorizontalOptions="StartAndExpand"
+                Text="Sede Central:"
+                TextColor="Gray" />
+
+            <Button
+                BackgroundColor="#0077C8"
+                BorderRadius="30"
+                Clicked="Button_Clicked_Dir1"
+                FontSize="15"
+                HeightRequest="50"
+                Text="Dirección"
+                TextColor="White"
+                WidthRequest="25" />
+        </StackLayout>
+
+
+        <!--  Centro Posgrados  -->
+        <StackLayout>
+            <Label
+                FontSize="Medium"
+                HorizontalOptions="StartAndExpand"
+                Text="KKKKKKKKKKKKKKKKK"
+                TextColor="Transparent"
+                VerticalOptions="Center" />
+        </StackLayout>
+
+        <StackLayout>
+            <Label
+                FontSize="20"
+                HorizontalOptions="StartAndExpand"
+                Text="Centro de Estudio de Posgrados:"
+                TextColor="Gray" />
+
+            <Button
+                BackgroundColor="#0077C8"
+                BorderRadius="30"
+                Clicked="Button_Clicked_Dir2"
+                FontSize="15"
+                HeightRequest="50"
+                Text="Dirección"
+                TextColor="White"
+                WidthRequest="40" />
+        </StackLayout>
+
+        <!--  Panama  -->
+        <StackLayout>
+            <Label
+                FontSize="Medium"
+                HorizontalOptions="StartAndExpand"
+                Text="KKKKKKKKKKKKKKKKK"
+                TextColor="Transparent"
+                VerticalOptions="Center" />
+        </StackLayout>
+
+        <StackLayout>
+            <Label
+                FontSize="20"
+                HorizontalOptions="StartAndExpand"
+                Text="Sede Panamá:"
+                TextColor="Gray" />
+
+            <Button
+                BackgroundColor="#0077C8"
+                BorderRadius="30"
+                Clicked="Button_Clicked_Dir3"
+                FontSize="15"
+                HeightRequest="50"
+                Text="Dirección"
+                TextColor="White"
+                WidthRequest="40" />
+        </StackLayout>
+
+
+    </StackLayout>
+</pages:PopupPage>

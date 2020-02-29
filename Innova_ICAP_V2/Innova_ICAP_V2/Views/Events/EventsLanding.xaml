@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage
+    x:Class="Innova_ICAP_V2.Views.Events.EventsLanding"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Eventos">
+
+    <!--  FIRST TAB  -->
+    <ContentPage
+        x:Name="PastEvents"
+        Title="Pasados"
+        Icon="CalendarioICAP.png">
+        <StackLayout Margin="5,5,5,0" Orientation="Horizontal">
+            <ListView
+                x:Name="EventsListView"
+                BackgroundColor="white"
+                CachingStrategy="RecycleElement"
+                HasUnevenRows="True"
+                IsPullToRefreshEnabled="true"
+                IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+                ItemSelected="OnItemSelected"
+                ItemsSource="{Binding Items}"
+                RefreshCommand="{Binding LoadItemsCommand}"
+                RowHeight="55"
+                SeparatorVisibility="Default"
+                VerticalOptions="FillAndExpand">
+
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <StackLayout HorizontalOptions="CenterAndExpand">
+                                    <Label
+                                        Font="18"
+                                        HorizontalTextAlignment="Center"
+                                        Text="{Binding EventName}"
+                                        TextColor="#0C2340" />
+                                </StackLayout>
+
+                                <Grid
+                                    Padding="20,10,0,10"
+                                    ColumnSpacing="0"
+                                    VerticalOptions="Fill">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <StackLayout Grid.Column="0">
+                                        <Label
+                                            Font="14"
+                                            HorizontalTextAlignment="Center"
+                                            Text="Fecha de Inicio"
+                                            TextColor="#0077C8" />
+                                        <Label
+                                            Font="12"
+                                            HorizontalTextAlignment="Center"
+                                            Text="{Binding EventStartDate, StringFormat='{0:MMMM dd, yyyy}'}" />
+                                    </StackLayout>
+
+                                    <StackLayout Grid.Column="1">
+                                        <Label
+                                            Font="14"
+                                            HorizontalTextAlignment="Center"
+                                            Text="Fecha de Fin"
+                                            TextColor="#0077C8" />
+                                        <Label
+                                            Font="12"
+                                            HorizontalTextAlignment="Center"
+                                            Text="{Binding EventEndDate, StringFormat='{0:MMMM dd, yyyy}'}" />
+                                    </StackLayout>
+                                </Grid>
+                            </StackLayout>
+
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+
+            </ListView>
+        </StackLayout>
+    </ContentPage>
+
+    <!--  SECOND TAB  -->
+    <ContentPage
+        x:Name="PresentEvents"
+        Title="Actuales"
+        Icon="CalendarioICAP.png">
+        <StackLayout Margin="5,5,5,0" Orientation="Horizontal">
+            <ListView
+                x:Name="EventsListView2"
+                BackgroundColor="white"
+                CachingStrategy="RecycleElement"
+                HasUnevenRows="True"
+                IsPullToRefreshEnabled="true"
+                IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+                ItemSelected="OnItemSelected"
+                ItemsSource="{Binding Items}"
+                RefreshCommand="{Binding LoadItemsCommand}"
+                RowHeight="55"
+                SeparatorVisibility="Default"
+                VerticalOptions="FillAndExpand">
+
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <StackLayout HorizontalOptions="CenterAndExpand">
+                                    <Label
+                                        Font="18"
+                                        HorizontalTextAlignment="Center"
+                                        Text="{Binding EventName}"
+                                        TextColor="#0C2340" />
+                                </StackLayout>
+
+                                <Grid
+                                    Padding="20,10,0,10"
+                                    ColumnSpacing="0"
+                                    VerticalOptions="Fill">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <StackLayout Grid.Column="0">
+                                        <Label
+                                            Font="14"
+                                            HorizontalTextAlignment="Center"
+                                            Text="Fecha de Inicio"
+                                            TextColor="#0077C8" />
+                                        <Label
+                                            Font="12"
+                                            HorizontalTextAlignment="Center"
+                                            Text="{Binding EventStartDate, StringFormat='{0:MMMM dd, yyyy}'}" />
+                                    </StackLayout>
+
+                                    <StackLayout Grid.Column="1">
+                                        <Label
+                                            Font="14"
+                                            HorizontalTextAlignment="Center"
+                                            Text="Fecha de Fin"
+                                            TextColor="#0077C8" />
+                                        <Label
+                                            Font="12"
+                                            HorizontalTextAlignment="Center"
+                                            Text="{Binding EventEndDate, StringFormat='{0:MMMM dd, yyyy}'}" />
+                                    </StackLayout>
+                                </Grid>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+
+            </ListView>
+        </StackLayout>
+    </ContentPage>
+
+    <!--  THIRD TAB  -->
+    <ContentPage
+        x:Name="FutureEvents"
+        Title="Futuros"
+        Icon="CalendarioICAP.png">
+        <StackLayout Margin="5,5,5,0" Orientation="Horizontal">
+            <ListView
+                x:Name="EventsListView3"
+                BackgroundColor="white"
+                CachingStrategy="RecycleElement"
+                HasUnevenRows="True"
+                IsPullToRefreshEnabled="true"
+                IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+                ItemSelected="OnItemSelected"
+                ItemsSource="{Binding Items}"
+                RefreshCommand="{Binding LoadItemsCommand}"
+                RowHeight="55"
+                SeparatorVisibility="Default"
+                VerticalOptions="FillAndExpand">
+
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <StackLayout>
+                                    <StackLayout HorizontalOptions="CenterAndExpand">
+                                        <Label
+                                            Font="18"
+                                            HorizontalTextAlignment="Center"
+                                            Text="{Binding EventName}"
+                                            TextColor="#0C2340" />
+                                    </StackLayout>
+
+                                    <Grid
+                                        Padding="20,10,0,10"
+                                        ColumnSpacing="0"
+                                        VerticalOptions="Fill">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+
+                                        <StackLayout Grid.Column="0">
+                                            <Label
+                                                Font="14"
+                                                HorizontalTextAlignment="Center"
+                                                Text="Fecha de Inicio" />
+                                            <Label
+                                                Font="12"
+                                                HorizontalTextAlignment="Center"
+                                                Text="{Binding EventStartDate, StringFormat='{0:MMMM dd, yyyy}'}"
+                                                TextColor="#0077C8" />
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1">
+                                            <Label
+                                                Font="14"
+                                                HorizontalTextAlignment="Center"
+                                                Text="Fecha de Fin" />
+                                            <Label
+                                                Font="12"
+                                                HorizontalTextAlignment="Center"
+                                                Text="{Binding EventEndDate, StringFormat='{0:MMMM dd, yyyy}'}"
+                                                TextColor="#0077C8" />
+                                        </StackLayout>
+                                    </Grid>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+
+            </ListView>
+        </StackLayout>
+    </ContentPage>
+
+</TabbedPage>

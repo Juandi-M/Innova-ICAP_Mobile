@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Innova_ICAP_V2.Views.Events.Activities"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Actividades">
+
+    <!--<ScrollView>
+        <Grid ColumnSpacing="0" RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="AUTO" />
+                <RowDefinition Height="AUTO" />
+                <RowDefinition Height="AUTO" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="AUTO" />
+                <RowDefinition Height="AUTO" />
+                <RowDefinition Height="AUTO" />
+            </Grid.RowDefinitions>
+
+              header background  
+            <Image Aspect="AspectFill" Source="ICAPWebsite.png" />
+            <Image
+                Margin="0,-1,0,-1"
+                Aspect="Fill"
+                Source="CurvedMask.png"
+                VerticalOptions="End" />
+
+              profile image  
+            <Image
+                HeightRequest="100"
+                HorizontalOptions="Center"
+                Source="LOGOFORO.png"
+                TranslationY="50"
+                VerticalOptions="End"
+                WidthRequest="250" />
+
+              Profile Name  
+            <StackLayout
+                Grid.Row="3"
+                Padding="0,50,0,00"
+                HorizontalOptions="Center">
+                <Label
+                    FontAttributes="Bold"
+                    HorizontalTextAlignment="Center"
+                    Style="{StaticResource ProfileNameLabel}"
+                    Text="{x:Static local:EventosViewModelEstatico.NombreEvento}" />
+            </StackLayout>
+              Profile Name  
+            <StackLayout
+                Grid.Row="4"
+                Padding="0,10,0,00"
+                HorizontalOptions="Center">
+                <Label
+                    HorizontalTextAlignment="Center"
+                    Style="{StaticResource StatsNumberLabel}"
+                    Text="{x:Static local:EventosViewModelEstatico.NombreConferencista}" />
+                <Label
+                    Margin="2,-5,2,2"
+                    HorizontalTextAlignment="Center"
+                    Style="{StaticResource StatsCaptionLabel}"
+                    Text="Moderador" />
+            </StackLayout>
+
+              Social Stats Section  
+            <Grid
+                Grid.Row="5"
+                Margin="0,10"
+                ColumnSpacing="0"
+                RowSpacing="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <StackLayout Grid.Column="0">
+                    <Label
+                        HorizontalTextAlignment="Center"
+                        Style="{StaticResource StatsNumberLabel}"
+                        Text="{x:Static local:EventosViewModelEstatico.FechaConvertida}" />
+                    <Label
+                        HorizontalTextAlignment="Center"
+                        Style="{StaticResource StatsCaptionLabel}"
+                        Text="Fecha" />
+                </StackLayout>
+                <StackLayout Grid.Column="1">
+                    <Label
+                        HorizontalTextAlignment="Center"
+                        Style="{StaticResource StatsNumberLabel}"
+                        Text="{x:Static local:EventosViewModelEstatico.HoraInicio}" />
+                    <Label
+                        HorizontalTextAlignment="Center"
+                        Style="{StaticResource StatsCaptionLabel}"
+                        Text="Inicia" />
+                </StackLayout>
+
+                <StackLayout Grid.Column="2">
+                    <Label
+                        HorizontalTextAlignment="Center"
+                        Style="{StaticResource StatsNumberLabel}"
+                        Text="{x:Static local:EventosViewModelEstatico.HoraFin}" />
+                    <Label
+                        HorizontalTextAlignment="Center"
+                        Style="{StaticResource StatsCaptionLabel}"
+                        Text="Finaliza" />
+                </StackLayout>
+            </Grid>
+
+              profile description  
+            <StackLayout
+                Grid.Row="6"
+                Margin="10,10,10,10"
+                HorizontalOptions="FillAndExpand">
+                <Label
+                    Margin="10,10,10,10"
+                    HorizontalOptions="FillAndExpand"
+                    HorizontalTextAlignment="Center"
+                    LineBreakMode="WordWrap"
+                    Style="{StaticResource StatsNumberLabel}"
+                    Text="{x:Static local:EventosViewModelEstatico.DescripcionEvento}" />
+            </StackLayout>
+
+
+              follow button  
+            <Button Grid.Row="4" Margin="20" Style="{StaticResource FollowButton}" Text="Follow" />
+
+        </Grid>
+    </ScrollView>-->
+</ContentPage>

@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage
+    x:Class="Innova_ICAP_V2.Views.AboutUs.AboutUsH"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Acerca del ICAP">
+    <!--  Pages can be added as references or inline  -->
+
+    <!--  FIRST TAB  -->
+    <ContentPage Title="Nosotros" Icon="Message.png">
+        <ScrollView>
+            <StackLayout>
+                <!--  Descripcion  -->
+                <StackLayout
+                    Grid.Row="1"
+                    Margin="10,10,10,10"
+                    HorizontalOptions="FillAndExpand">
+
+                    <Image
+                        HeightRequest="195"
+                        HorizontalOptions="Center"
+                        Source="https://app.icap.ac.cr/CentralAmericanFlags.png" />
+
+                    <Label
+                        FontSize="Large"
+                        HorizontalTextAlignment="Center"
+                        Text="¿Qué somos?"
+                        TextColor="#0C2340" />
+
+                    <Label
+                        Margin="10,10,10,10"
+                        HorizontalTextAlignment="Center"
+                        LineBreakMode="WordWrap"
+                        Text="El Instituto Centroamericano de Administración Pública (ICAP) es el organismo internacional del Sistema de la Integración Centroamericana (SICA) especializado en administración pública. Promovemos el desarrollo de los recursos humanos y la modernización de los sectores públicos, a la vez que impulsamos la integración centroamericana." />
+
+                    <Label
+                        FontSize="Large"
+                        HorizontalTextAlignment="Center"
+                        Text="¿Qué hacemos?"
+                        TextColor="#0C2340" />
+
+                    <Label
+                        Margin="10,10,10,10"
+                        HorizontalTextAlignment="Center"
+                        LineBreakMode="WordWrap"
+                        Text="Trabajamos en tres áreas estratégicas: la formación, ofrecemos una oferta académica de 10 maestrías y un doctorado; la asistencia técnica a instituciones, con servicios como asesorías, consultorías, capacitaciones, y un programa de formación continua abierto al público; y la investigación como medio para identificar y proponer soluciones a los retos de la región." />
+                </StackLayout>
+
+                <!--  Social Grid  -->
+                <StackLayout HorizontalOptions="CenterAndExpand">
+                    <Grid
+                        Margin="5"
+                        ColumnSpacing="10"
+                        RowSpacing="10">
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition x:Name="gc1" Width="*" />
+                            <ColumnDefinition x:Name="gc2" Width="*" />
+                            <ColumnDefinition x:Name="gc3" Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition x:Name="gr1" Height="*" />
+                            <RowDefinition x:Name="gr2" Height="*" />
+                        </Grid.RowDefinitions>
+
+                        <StackLayout Grid.Row="0" Grid.Column="0">
+                            <Image HeightRequest="40" Source="https://app.icap.ac.cr/facebook.png">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_Faceb" />
+                                </Image.GestureRecognizers>
+                            </Image>
+                            <Label HorizontalTextAlignment="Center" Text="Facebook" />
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="0" Grid.Column="1">
+                            <Image HeightRequest="40" Source="https://app.icap.ac.cr/twitter.png">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_Tweet" />
+                                </Image.GestureRecognizers>
+                            </Image>
+                            <Label HorizontalTextAlignment="Center" Text="Twitter" />
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="0" Grid.Column="2">
+                            <Image HeightRequest="40" Source="https://app.icap.ac.cr/instagram.png">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_Insta" />
+                                </Image.GestureRecognizers>
+                            </Image>
+                            <Label HorizontalTextAlignment="Center" Text="Instagram" />
+                        </StackLayout>
+
+                        <!--  PHONE NUMBERS  -->
+
+                        <StackLayout Grid.Row="0" Grid.Column="1">
+                            <Image HeightRequest="40" Source="https://app.icap.ac.cr/twitter.png">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_Tweet" />
+                                </Image.GestureRecognizers>
+                            </Image>
+                            <Label HorizontalTextAlignment="Center" Text="Twitter" />
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="0" Grid.Column="2">
+                            <Image HeightRequest="40" Source="https://app.icap.ac.cr/instagram.png">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_Insta" />
+                                </Image.GestureRecognizers>
+                            </Image>
+                            <Label HorizontalTextAlignment="Center" Text="Instagram" />
+                        </StackLayout>
+
+                        <StackLayout
+                            Grid.Row="1"
+                            Grid.Column="0"
+                            Grid.ColumnSpan="3"
+                            HorizontalOptions="Center">
+
+                            <Label
+                                x:Name="CallUsLabel"
+                                HorizontalTextAlignment="Center"
+                                Text="+506 2234-1011">
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_Phone1" />
+                                </Label.GestureRecognizers>
+                            </Label>
+
+                            <Label
+                                x:Name="CallUsLabel2"
+                                HorizontalTextAlignment="Center"
+                                Text="+506 2225-4616">
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_Phone1" />
+                                </Label.GestureRecognizers>
+                            </Label>
+
+                            <Label HorizontalTextAlignment="Center" Text="Número telefónicos" />
+                        </StackLayout>
+
+                    </Grid>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage>
+
+    <!--  SECOND TAB  -->
+    <ContentPage Title="Director" Icon="Director.png">
+        <ScrollView>
+            <StackLayout>
+                <!--  profile image  -->
+                <Image
+                    Margin="10"
+                    HeightRequest="250"
+                    HorizontalOptions="Center"
+                    Source="https://app.icap.ac.cr/alexander.png"
+                    WidthRequest="250" />
+
+                <!--  Profile Name  -->
+                <StackLayout HorizontalOptions="Center">
+                    <Label
+                        FontSize="Large"
+                        HorizontalTextAlignment="Center"
+                        Text="Dr. Alexánder López R."
+                        TextColor="#0C2340" />
+                    <Label
+                        Margin="0,-5"
+                        FontSize="Medium"
+                        HorizontalTextAlignment="Center"
+                        Text="Director del ICAP "
+                        TextColor="#0077C8" />
+                </StackLayout>
+
+                <!--  profile description  -->
+                <StackLayout Margin="10,10,10,10" HorizontalOptions="Start">
+                    <Label
+                        Margin="1,1"
+                        HorizontalTextAlignment="Center"
+                        Text="Durante más de seis décadas, el ICAP, en cumplimiento de su mandato, ha tenido un claro compromiso con la administración pública de los gobiernos centroamericanos y República Dominicana, contribuyendo con la formación de profesionales con altos valores éticos y con competencias técnicas que respondan a las necesidades actuales de calidad e innovación en los aparatos gubernamentales. El desarrollo de nuestros países está relacionado con el mejoramiento del proceso educativo; de esto depende, la capacidad de tener servicios de calidad en la función pública y la posibilidad de tener una inserción inteligente y estratégica de la región en el escenario internacional. " />
+
+                    <Label
+                        Margin="1,1"
+                        HorizontalTextAlignment="Center"
+                        Text="Por eso, para el ICAP, como institución académica, es prioritaria la generación de conocimientos y la formación de recursos humanos capacitados para su aplicación, transferencia e innovación. Para quienes colaboramos en el ICAP, nuestra filosofía de trabajo es la mejora continua de los servicios que brindamos a la región centroamericana. Nos preparamos con entusiasmo para ofrecer lo mejor a nuestros usuarios en todos los ámbitos de la administración pública. Les invito a conocer nuestros programas de formación y capacitación, las actividades de investigación y extensión y nuestra oferta de asistencia técnica. Esperamos que por medio de este espacio podamos interactuar de forma fluida y directa." />
+
+                    <Label
+                        Margin="1,1"
+                        HorizontalOptions="CenterAndExpand"
+                        Text="¡Bienvenidos!" />
+
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage>
+
+    <!--  ThirdTab TAB OFERTA ACADEMICA  -->
+    <ContentPage
+        Title="Carreras"
+        Padding="10,0,10,0"
+        Icon="Courses.png">
+        <ScrollView>
+            <StackLayout>
+
+                <!--  MAESTRIAS  -->
+                <StackLayout>
+                    <Label
+                        FontAttributes="Bold"
+                        FontSize="25"
+                        HorizontalOptions="CenterAndExpand"
+                        Text="Maestrías"
+                        TextColor="#0C2340" />
+                </StackLayout>
+
+                <StackLayout>
+                    <Label
+                        FontSize="Medium"
+                        HorizontalOptions="Start"
+                        Text=" • Maestría en Gestión y Política Pública" />
+                    <Label
+                        FontSize="Medium"
+                        HorizontalOptions="Start"
+                        Text=" • Maestría en Gestión del Conocimiento e Investigación en Políticas Públicas" />
+                    <Label
+                        FontSize="Medium"
+                        HorizontalOptions="Start"
+                        Text=" • Maestría en Gestión de la Inversión Pública" />
+                    <Label
+                        FontSize="Medium"
+                        HorizontalOptions="Start"
+                        Text=" • Maestría en Gestión de Contratos de Obra e Infraestructura Pública" />
+                    <Label
+                        FontSize="Medium"
+                        HorizontalOptions="Start"
+                        Text=" • Maestría en Gestión de Compras Públicas" />
+                    <Label
+                        FontSize="Medium"
+                        HorizontalOptions="Start"
+                        Text=" • Maestría en Gestión Ambiental y Desarrollo Local" />
+                    <Label
+                        FontSize="Medium"
+                        HorizontalOptions="Start"
+                        Text=" • Maestría en Gerencia de Proyectos de Desarrollo" />
+                    <Label
+                        FontSize="Medium"
+                        HorizontalOptions="Start"
+                        Text=" • Maestría en Gerencia de Políticas y Programas Sociales" />
+                    <Label
+                        FontSize="Medium"
+                        HorizontalOptions="Start"
+                        Text=" • Maestría en Gerencia de la Salud" />
+                    <Label
+                        FontSize="Medium"
+                        HorizontalOptions="Start"
+                        Text=" • Maestría en Gerencia de la Calidad" />
+                    <Label
+                        FontSize="Medium"
+                        HorizontalOptions="Start"
+                        Text=" • Maestría en Gerencia de Aviación Civil" />
+                </StackLayout>
+
+                <!--  DOCTORADO  -->
+                <StackLayout>
+                    <Label
+                        FontAttributes="Bold"
+                        FontSize="25"
+                        HorizontalOptions="CenterAndExpand"
+                        Text="Doctorados"
+                        TextColor="#0C2340" />
+                </StackLayout>
+
+                <StackLayout>
+                    <Label
+                        FontSize="Medium"
+                        HorizontalOptions="Start"
+                        Text=" • Doctorado en Gestión Pública y Ciencias Empresariales" />
+                </StackLayout>
+
+
+                <!--  DIPLOMADOS  -->
+                <StackLayout>
+                    <Label
+                        FontAttributes="Bold"
+                        FontSize="25"
+                        HorizontalOptions="CenterAndExpand"
+                        HorizontalTextAlignment="Center"
+                        Text="Diplomados y espcializaciones"
+                        TextColor="#0C2340"
+                        VerticalOptions="CenterAndExpand"
+                        VerticalTextAlignment="Center" />
+                </StackLayout>
+
+                <StackLayout>
+                    <Label
+                        FontSize="Medium"
+                        HorizontalOptions="Start"
+                        Text=" • Diplomado en Prospectiva" />
+                    <Label
+                        FontSize="Medium"
+                        HorizontalOptions="Start"
+                        Text=" • Diplomado en Asociaciones Público-Privadas" />
+                    <Label
+                        FontSize="Medium"
+                        HorizontalOptions="Start"
+                        Text=" • Diplomado en Gerencia de la Calidad de la Atención Hospitalaria" />
+                    <Label
+                        FontSize="Medium"
+                        HorizontalOptions="Start"
+                        Text=" • Diplomado en Formulación y Evaluación de Proyectos de Inversión Pública" />
+                </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage>
+</TabbedPage>
